@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Beautiful File Converter</h1>
+  </header>
+
+  <main>
+    <section class="upload-section">
+      <h2>Upload Your File</h2>
+      <div class="file-upload">
+        <input type="file" id="fileInput">
+        <label for="fileInput">
+          <span>Choose File</span>
+        </label>
+      </div>
+      <p id="selectedFile"></p>
+      <button id="convertBtn">Convert</button>
+    </section>
+
+    <section class="format-section">
+      <h2>Choose Output Format</h2>
+      <div class="format-options">
+        <label>
+          <input type="radio" name="format" value="doc">
+          DOC
+        </label>
+        <label>
+          <input type="radio" name="format" value="xml">
+          XML
+        </label>
+        <label>
+          <input type="radio" name="format" value="image">
+          Image
+        </label>
+        <label>
+          <input type="radio" name="format" value="pdf">
+          PDF
+        </label>
+        <label>
+          <input type="radio" name="format" value="ppt">
+          PPT
+        </label>
+        <label>
+          <input type="radio" name="format" value="xls">
+          XLS
+        </label>
+        <label>
+          <input type="radio" name="format" value="txt">
+          TXT
+        </label>
+      </div>
+    </section>
+
+    <section class="result-section">
+      <h2>Conversion Result</h2>
+      <div id="conversionResult"></div>
+      <div id="downloadSection"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Beautiful File Converter. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
